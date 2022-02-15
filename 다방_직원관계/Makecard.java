@@ -4,12 +4,6 @@ public class Makecard {
     private static Makecard serialnum = new Makecard();
     public int cardid;
 
-    public Makecard() {
-        
-    }
-    public Makecard(int cardid) {
-        this.cardid = cardid;
-    }
     public static Makecard getId() {
         if (serialnum == null){
             serialnum = new Makecard();
