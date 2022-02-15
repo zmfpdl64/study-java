@@ -1,4 +1,4 @@
-package test2;
+package 대중교통객체;
 
 public class Bus {
     int busnum;

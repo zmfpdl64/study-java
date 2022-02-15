@@ -1,4 +1,4 @@
-package test2;
+package 대중교통객체;
 
 public class Taketrans {
     public static void main(String [] args) {
