@@ -5,10 +5,16 @@ public class Customer {
     protected String name;
     protected static int membernum = 1;
     int grade;
-    int bonuspoint;
+    double bonuspoint;
     double bonusratio;
 
     public Customer() {
+        this.memid = membernum++;
+        this.grade = 1;
+        this.bonusratio = 0.01;
+    }
+    public Customer(String name) {
+        this.name = name;
         this.memid = membernum++;
         this.grade = 1;
         this.bonusratio = 0.01;
