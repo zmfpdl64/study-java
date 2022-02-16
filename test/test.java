@@ -1,16 +1,19 @@
 package test;
+import java.util.ArrayList;
+import java.util.Arrays;    //문자열배열 리스트로 변환
+import java.util.Comparator;
 public class test {
 
 
     public static void main(String[] args) {
-        double a = 123456789012356789D; //기본 실수자리까지만 입력이 가능하지만 d나 f를 붙혀주면 더 많은자리까지 입력이 가능하다.
-        float b = 1234567890;
-        int c = 1234567890;
-
+        String data [] = {"123", "456", "789"};
+        ArrayList<String> a = new ArrayList<>(Arrays.asList(data));
+        String data1;
+        data1 = String.join(" ", data);
+        a.sort(Comparator.naturalOrder());
         System.out.println(a);
-        System.out.println(b);
-        System.out.println(c);
-
+        System.out.println(data1);
+        System.out.println(Arrays.asList(data));
     }
 }
 

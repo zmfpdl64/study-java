@@ -1,5 +1,5 @@
 package 상속.다형성;
-
+import java.util.ArrayList;
 class Animal {
     public void move() {
         System.out.println("동물이 움직입니다.");
@@ -27,10 +27,26 @@ class Eagle extends Animal {
 public class AnimalTest {
     public static void main(String [] args) {
         AnimalTest a = new AnimalTest();
+        // ArrayList<Animal> aniList = new ArrayList<Animal>();
+        // aniList.add(new Human());
+        // aniList.add(new Tiger());
+        // aniList.add(new Eagle());
+        // aniList.add(new Animal());
+        Animal b = new Human();     //작은 값으로 형변환
+        
         a.moveAnimal(new Human());
         a.moveAnimal(new Tiger());
         a.moveAnimal(new Eagle());
         a.moveAnimal(new Animal());
+        a.moveAnimal(b);
+        if (b instanceof Human) {
+            Human human = (Human)b;
+            human.move();       
+        }
+        // System.out.println(h instanceof Animal);
+        // for(Animal ani : aniList) {
+        //     ani.move();
+        // }
 
     }
     public void moveAnimal(Animal animal) {
