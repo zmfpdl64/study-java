@@ -39,8 +39,8 @@ public class AnimalTest {
         a.moveAnimal(new Eagle());
         a.moveAnimal(new Animal());
         a.moveAnimal(b);
-        if (b instanceof Human) {
-            Human human = (Human)b;
+        if (b instanceof Human) {       //직전 클래스가 Human 이었는가?
+            Human human = (Human)b ;    //다운캐스트
             human.move();       
         }
         // System.out.println(h instanceof Animal);
