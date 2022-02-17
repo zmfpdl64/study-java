@@ -10,8 +10,7 @@ public class Player {
     public PlayerLevel getLevel() {
         return level;
     }
-    public void upgradeLevel(PlayerLevel level) {
-        level.showLevelMessage();
+    public void upgradeLevel(PlayerLevel level) {   //부모클래스로 자식 클래스를 받아서 클래스를 변환시킬 수 있다.
         this.level = level;
         this.level.showLevelMessage();
     }
