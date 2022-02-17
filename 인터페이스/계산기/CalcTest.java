@@ -16,8 +16,9 @@ public class CalcTest {
         System.out.println(a.time(x, y));
         System.out.println(a.div(x, y));
         a.showinfo();
-
-
+        a.description();
+        int[] arr = {1,2,3,4,5};
+        Calc.total(arr);
         System.out.println("============Calc2===========");
         System.out.println(g.time(x, y));
         System.out.println(g.div(x, y));

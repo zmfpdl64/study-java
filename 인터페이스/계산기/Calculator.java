@@ -5,6 +5,7 @@ public abstract class Calculator implements Calc {
     public int add(int x, int y){
         return x + y;
     }
+
     @Override
     public int sub(int x, int y) {
         return x - y;
