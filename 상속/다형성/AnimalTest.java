@@ -1,5 +1,5 @@
 package 상속.다형성;
-import java.util.ArrayList;
+//import java.util.ArrayList;
 class Animal {
     public void move() {
         System.out.println("동물이 움직입니다.");
