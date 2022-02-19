@@ -1,0 +1,56 @@
+Collection 인터페이스
+
+1. List 인터페이스
+
+순서가 있는 자료관리, 중복허용이 있는 인터페이스를 구현한 클래스이다.
+1. ArrayList
+2. Vector
+3. LinkedList
+4. Stack
+5. Queue
+...
+
+2. Set 인터페이스
+
+순서가 정해져 있지 않으며 중복을 허용하지 않는다. 
+1. HashSet
+2. TreeSet
+
+
+Collection 인터페이스에 선언된 메서드 중 자주 사용하는 메서드는
+1. boolean add(E e)
+객체 추가
+2. void clear() 
+객체 초기화
+3. Iterlator<E> iterlator
+순환할 반복자 반환
+4. boolean remove(Object o)
+매개변수에 해당하는 인스턴스 제거
+5. int size()
+요소 개수 반환
+
+
+
+Map 인터페이스
+
+Map인터페이스는 하나가 아닌 쌍으로 되어 있는 자료를 관리하는 메서드들이 선언돼 있다.
+흔히 Dictionary 형태의 Key값과 Value값으로 나눠져있다.
+
+1. V put(K key, V value)
+key에 해당하는 value값을 map에 넣는다.
+2. V get(K key)
+key에 해당하는 value값을 반환한다.
+3. boolean isEmpty()
+Map이 비어있는지 여부를 반환한다.
+4. boolean containsKey(Object o)
+Map에 해당 키가 있는지 반환한다.
+5. boolean containsValue(Object o)
+Map에 해당 값이 있는지 반환한다.
+6. Set keyset()
+key 집합을 Set로 반환한다.
+7. Collection values()
+value를 Collection으로 반환한다.(중복무관)
+8. V remove(key)
+key가 있는 경우 삭제한다.
+9. boolean remove(Object key, Object value)
+key가 있는 경우 key에 해당하는 value가 매개변수와 일치할 때 삭제한다.

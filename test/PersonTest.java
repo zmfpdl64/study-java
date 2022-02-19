@@ -27,5 +27,8 @@ public class PersonTest {
     public void info() {
         System.out.println("나의 신상정보: " + name + " " + height + " "  + weight);
     }
-    
+    public static void main(String [] args) {
+        PersonTest a = new PersonTest("woojin");
+        System.out.println(a.name);
+    }
 }
