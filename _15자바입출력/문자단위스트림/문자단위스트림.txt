@@ -1,0 +1,25 @@
+Reader
+문자 단위로 읽는 스트림 중 최상위 스트림으로 다음 하위 클래스를 주로 사용한다.
+
+1. FileReader
+// 파일에서 문자 단위로 읽는 스트림 클래스
+
+FileReader(String name)
+FileReader(File f)
+
+2. InputStreamReader
+// 바이트 단위로 읽는 자료를 문자로 변환해 주는 보조 스트림 클래스
+3. BufferedReader
+// 문자로 읽을 때 배열을 제공하여 한꺼번에 읽을 수 있는 기능을 제공해 주는 보조 스트림
+
+내부 메서드
+
+int read()
+// 한문자를 읽는다.
+int read(char[] buf)
+// 파일로부터 buf배열에 문자를 읽는다.
+int read(char[] buf, int off, int len)
+// buf배열의 off위치부터 len개수만큼 읽는다.
+void close()
+//리소스 반환
+

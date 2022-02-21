@@ -1,0 +1,68 @@
+InputStream
+바이트 단위로 읽는 최상위 스트림이다.
+
+내부 메서드
+int read()
+// 입력 스트림으로부터 한 바이트의 자료를 읽는다. 읽은 자료의 바이트 수를 반환한다.
+
+int read(byte b[])
+// 입력 스트림으로부터 b[] 크기의 자료를 b[]에 읽습니다. 읽은 자료의 바이트 수를 반환합니다.
+
+int read(byte b[], int off, int len)
+// b[]의 시작위치 off 부터 len길이 만큼 읽는다.
+
+void close()
+//입력 스트림과 연결된 대상 리소스를 닫는다.
+
+
+하위 스트림 클래스
+1. FileInputStream 
+// 파일에서 바이트 단위로 자료를 읽는다.
+
+생성자
+FileInputStream(String name)
+// 파일 이름 name을 매개변수로 받아 입력 스트림으로 생성한다.
+
+FileInputStream(File f)
+// File 클래스 정보를 매개변수로 받아 입력 스트림을 생성한다.
+
+2. ByteArrayInputStream
+// Byte 배열 메모리에서 바이트 단위로 자료를 읽는다.
+
+3. FilterInputStream
+// 보조 스트림의 상위 클래스이다.
+
+
+
+
+
+OutputStream
+바이트 단위로 쓰는 스트림 중 최상위 스트림이다.
+
+내부 메서드
+
+void write(int b)
+// 한 바이트를 출력한다.
+
+void write(byte [] b)
+// b[] 배열에 있는 자료를 출력한다.
+
+void write(byte b[], int off, int len)
+// b[] 배열에 off인덱스 부터 len길이 만큼 출력한다.
+
+void flush()
+// 출력을 위해 잠시 자료가 머무르는 출력 버퍼를 강제로 비워 자료를 출력한다.
+
+void close()
+// 출력 스트림과 연결된 리소스를 닫는다.
+
+
+
+1. FileOutputStream
+// 바이트 단위로 파일에 자료를 쓴다.
+
+2. ByteArrayOutputStream
+// Byte 배열에 바이트 단위로 자료를 씁니다.
+
+3. FilterOutputStream
+// 기반 스트림에서 자료를 쓸 때 추가 기능을 제공하는 보조 스트림의 최상위 클래스이다.

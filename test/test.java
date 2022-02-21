@@ -6,7 +6,16 @@ public class test {
 
 
     public static void main(String[] args) {
-        
+        AutoCloseable a = new AutoCloseable() {
+            public void close() throws Exception{
+                System.out.println("out");
+            }
+        };
+        try(a) {
+
+        } catch(Exception e) {
+            System.out.println(e);
+        }
     }
 }
 
