@@ -1,5 +1,6 @@
 package 예외처리;
-
+import java.io.FileNotFoundException;
+import java.io.FileInputStream;
 public class AutoCloseTest {
     public static void main(String [] args) {
             //리소스 종료
@@ -19,8 +20,11 @@ public class AutoCloseTest {
             //향상된 try-with-resource
         AutoCloseObj a = new AutoCloseObj();
         try(a) {
-            throw new Exception();
-        } catch(Exception e) {
+            // throw new FileNotFoundException();
+            //try-catch 구문이 종료되면 a인스턴스의 자원이 자동으로 반납된다.
+            FileInputStream b = new FileInputStream("a.txt");
+            System.out.println("try 실행");
+        } catch(FileNotFoundException e) {
             System.out.println(e);
         }
     }

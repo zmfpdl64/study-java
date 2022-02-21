@@ -11,7 +11,7 @@ public class ExceptionHandling3 {
             a = new FileInputStream("a.txt");
         } catch(FileNotFoundException e) {
             System.out.println(e);
-            return; //리턴문을 넣어도 항상 finally문은 수행되는것을 볼 수 있다!!
+            return; //리턴문을 넣어도 항상 finally문은 수행되는것을 볼 수 있다
         }
         finally {
             if(a != null) {

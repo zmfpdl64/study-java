@@ -23,8 +23,8 @@ public class IDFormatTest {
             a.setuserid(userid);
         } catch(IDFormatException e) {
             System.out.println(e.getMessage());
-            e.printStackTrace();
-            System.out.println(e);
+            // e.printStackTrace();
+            // System.out.println(e);
         }
         userid = "1234567";
         try {
