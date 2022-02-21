@@ -3,7 +3,7 @@ package 내부클래스_람다식_스트림.람다식;
 interface PrintString {
     void showString(String str);
 }
-
+//람다식으로 하면 인터페이스를 바로 사용할 수 있다.
 public class lambdaTest {
     public static void main(String [] args) {
         String hello = new String("Hello");
